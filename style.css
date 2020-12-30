@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+:root {
+  --color-main: #111111;
+  --color-pink: #FBDFDB;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  color: var(--color-main);
+  font-family: 'Roboto', sans-serif;
+}
+
+.content {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 32px;
+}
+
+.content .logo {
+  margin-right: 128px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--color-main);
+}
+
+.menu > a:first-child {
+  padding-right: 32px;
+}
+
+.menu a:hover {
+  color: var(--color-pink)
+}
+
+.banner {
+  background-color: var(--color-pink);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 366px;
+  border-radius: 30px;
+  width: 940px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.banner .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.description h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.description > h1:first-child {
+  padding-bottom: 12px;
+}
+
+.logoChef {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
