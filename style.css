@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
 :root {
   --color-main: #111111;
@@ -26,6 +27,7 @@ body {
 
 .content .logo {
   margin-right: 128px;
+  font-family: 'Yellowtail', cursive;
 }
 
 .menu a {
@@ -72,4 +74,61 @@ body {
   position: absolute;
   bottom: 0;
   right: 100px;
+}
+
+/* MAIN */
+.main {
+  margin: 50px auto;
+  width: 940px;
+  align-items: center;
+}
+
+.main h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.receitas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  margin-top: 20px
+}
+
+.receitas img {
+  width: 300px;
+  height: 140px;
+  border-radius: 15px;
+}
+
+.receita h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.receita p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #777777;
+  margin-top: 5px;
+}
+
+footer {
+  height: 62px;
+  background: #EEEEEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  bottom: 0;
+}
+
+footer p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #999999;
 }
