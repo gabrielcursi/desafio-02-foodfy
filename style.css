@@ -30,6 +30,11 @@ body {
   font-family: 'Yellowtail', cursive;
 }
 
+.content .logo a {
+  text-decoration: none;
+  color: #111111;
+}
+
 .menu a {
   text-decoration: none;
   color: var(--color-main);
@@ -40,7 +45,7 @@ body {
 }
 
 .menu a:hover {
-  color: var(--color-pink)
+  font-weight: bold;
 }
 
 .banner {
@@ -131,4 +136,40 @@ footer p {
   font-weight: 400;
   font-size: 14px;
   color: #999999;
+}
+
+/* ABOUT.HTML */
+
+.action {
+  margin: 18px auto;
+  width: 940px;
+}
+
+.aboutFoodfy {
+  padding-bottom: 30px;
+}
+
+.aboutFoodfy .title {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.comoTudoComecou .title {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.comoTudoComecou {
+  padding-bottom: 30px;
+}
+
+.nossasReceitas .title {
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.history {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
 }
