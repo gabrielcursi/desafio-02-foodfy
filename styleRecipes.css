@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+:root {
+  --color-main: #111111;
+  --color-pink: #FBDFDB;
+}
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden; 
+}
+
+.modal {
+  background-color: white;
+  width: 50%;
+  height: 50%;
+  margin: 5vh;
+  position: relative;
+}
+
+.modal-overlay .modal .modal-header {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+/* .modal,
+.close-modal,
+.maximize-modal {
+  color: black; */
+  /* position: absolute; esse*/ 
+  /* float: right; esse*/
+  /* right: 8px;
+  top: 8px;
+  cursor: pointer;
+} */
+
+/* MODAL ACTIVE */
+
+/* .modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+} */
+
+/* iframe {
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+} */
