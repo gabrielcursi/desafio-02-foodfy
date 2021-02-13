@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yellowtail&display=swap");
 
 :root {
   --color-main: #111111;
-  --color-pink: #FBDFDB;
+  --color-pink: #fbdfdb;
 }
 
 * {
@@ -14,7 +14,7 @@
 
 body {
   color: var(--color-main);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
 }
 
 .content {
@@ -27,7 +27,7 @@ body {
 
 .content .logo {
   margin-right: 128px;
-  font-family: 'Yellowtail', cursive;
+  font-family: "Yellowtail", cursive;
 }
 
 .content .logo a {
@@ -88,16 +88,16 @@ body {
   align-items: center;
 }
 
-.main h1 {
+/* .main h1 {
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
-}
+} */
 
 .receitas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px 20px;
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 .receitas img {
@@ -107,14 +107,14 @@ body {
 }
 
 .receita h2 {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
   font-size: 18px;
   margin-top: 20px;
 }
 
 .receita p {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-size: 14px;
   color: #777777;
   margin-top: 5px;
@@ -122,7 +122,7 @@ body {
 
 footer {
   height: 62px;
-  background: #EEEEEE;
+  background: #eeeeee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,7 +132,7 @@ footer {
 }
 
 footer p {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: "Roboto", sans-serif; */
   font-weight: 400;
   font-size: 14px;
   color: #999999;
