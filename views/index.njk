@@ -1,27 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- <meta charset="UTF-8"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <link rel="stylesheet" href="style.css" />
+{% extends "layout.njk" %}
+
+  {% block head %}
     <title>Foodfy</title>
-  </head>
+  {% endblock %}
 
-  <body>
-    <header>
-      <div class="content">
-        <div class="logo">
-          <a href="index.html">
-            <h2>Foodfy</h2>
-          </a>
-        </div>
+{% block content %}
 
-        <div class="menu">
-          <a href="about.html">Sobre</a>
-          <a href="receitas.html">Receitas</a>
-        </div>
-      </div>
-    </header>
+
     <section class="banner">
       <div class="description">
         <h1>As melhores receitas</h1>
@@ -36,17 +21,19 @@
     </section>
 
     <section class="main">
-      <div>
+      {# <div>
         <h1>Mais acessadas</h1>
-      </div>
+      </div> #}
       <div class="receitas">
+        {% for receita in receitas %}
         <div class="receita">
-          <img src="./assets/burger.png" alt="Hamburguer" />
-          <h2>Triplo bacon burger</h2>
-          <p>por Jorge Relato</p>
+          <img src="{{receita.image}}" alt="Hamburguer" />
+          <h2>{{receita.title}}</h2>
+          <p>{{receita.author}}</p>
         </div>
+        {%endfor%}
 
-        <div class="receita">
+        {# <div class="receita">
           <img src="./assets/pizza.png" alt="Pizza" />
           <h2>Pizza 4 estações</h2>
           <p>por Fabiana Melo</p>
@@ -74,13 +61,11 @@
           <img src="./assets/asinhas.png" alt="Asinhas" />
           <h2>Asinhas de frango ao barbecue</h2>
           <p>por Vania Steroski</p>
-        </div>
+        </div> #}
       </div>
     </section>
-    <footer>
-      <div>
-        <p>Todos direitos reservados, receitas Foodfy.</p>
-      </div>
-    </footer>
-  </body>
-</html>
+
+{% endblock %}
+
+
+
