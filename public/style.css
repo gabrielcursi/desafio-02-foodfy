@@ -129,6 +129,8 @@ footer {
   width: 100%;
   margin-top: 50px;
   bottom: 0;
+  position: absolute;
+  flex-direction: row;
 }
 
 footer p {

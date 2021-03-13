@@ -1,11 +1,11 @@
 const modalOverlay = document.querySelector(".modal-overlay");
 const recipes = document.querySelectorAll(".receita");
 
+for (let i = 0; i < recipes.length; i++) {
+  const recipeId = i;
 
-for (let recipe of recipes) {
-  recipe.addEventListener("click", function(){
-    const id = recipe.getAttribute("id");
-    modalOverlay.classList.add('active')
+  recipes[i].addEventListener("click", () => {
+      window.location.href = `/recipes/${recipeId}`
   })
 }
 

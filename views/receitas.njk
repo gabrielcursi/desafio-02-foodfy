@@ -7,81 +7,17 @@
 {% block content %}
       <section class="main">
         <div class="receitas">
-          <div class="receita" id="burger">
-            <img src="./assets/burger.png" alt="Hamburguer" />
-            <h2>Triplo bacon burger</h2>
-            <p>por Jorge Relato</p>
+          {% for receita in receitas %}
+          <div class="receita" id="{{receita.title}}">
+            <img src="{{receita.image}}" alt="{{receita.title}}" />
+            <h2>{{receita.title}}</h2>
+            <p>{{receita.author}}</p>
           </div>
-
-          <div class="receita" id="burger">
-            <img src="./assets/pizza.png" alt="Pizza" />
-            <h2>Pizza 4 estações</h2>
-            <p>por Fabiana Melo</p>
-          </div>
-
-          <div class="receita" id="espaguete">
-            <img src="./assets/espaguete.png" alt="Espaguete" />
-            <h2>Espaguete ao alho</h2>
-            <p>por Júlia Kinoto</p>
-          </div>
-
-          <div class="receita" id="lasanha">
-            <img src="./assets/lasanha.png" alt="Lasanaha" />
-            <h2>Lasanha mac n’ cheese</h2>
-            <p>por Juliano Vieira</p>
-          </div>
-
-          <div class="receita" id="doce">
-            <img src="./assets/doce.png" alt="Doce" />
-            <h2>Docinhos pão-do-céu</h2>
-            <p>por Ricardo Golvea</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
-
-          <div class="receita" id="asinhas">
-            <img src="./assets/asinhas.png" alt="Asinhas" />
-            <h2>Asinhas de frango ao barbecue</h2>
-            <p>por Vania Steroski</p>
-          </div>
+          {%endfor%}
         </div>
       </section>
 
-      <div class="modal-overlay">
+      {# <div class="modal-overlay">
         <div class="modal">
           <div class="modal-content">
             <div class="modal-header">
@@ -97,7 +33,7 @@
 
           </div>
         </div>
-      </div>
+      </div> #}
     <script src="scripts.js"></script>
 
 {% endblock %}

@@ -1,0 +1,53 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/style-receita.css" />
+
+  <title>Receitas Foodfy</title>
+{% endblock %}
+
+{% block content %}
+<div class="content">
+      <section class="banner-receita">
+        <img src="{{ recipe.image }}" alt="{{ recipe.title }}"/>
+        <h1>{{ recipe.title }}</h1>
+        <p>{{ recipe.author }}</p>
+    </section>
+
+    <section class="ingredients">
+      <div class="opetion-ingredients">
+        <h2>Ingredientes</h2>
+        <p id="btn-ingredients">ESCONDER</p>
+      </div>
+      <div class="list-ingredients">
+        <ul>
+          <li>itens</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="preparation">
+      <div class="option-prepar">
+        <h2>Modo de preparo</h2>
+        <p id="btn-preparation">ESCONDER</p>
+      </div>
+      <div class="list-preparation">
+        <ul>
+          <li>modo de preparo</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="option-information">
+        <h2>Informações adicionais</h2>
+        <p id="btn-information">ESCONDER</p>
+      </div>
+      <p class="description">{{ recipe.information }}</p>
+    </section>
+</div>
+      
+    <script src="scripts.js"></script>
+
+{% endblock %}
+
